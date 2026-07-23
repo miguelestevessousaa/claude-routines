@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviation Daily — July 23, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0B0D;
+    --fg:#EDEAE2;
+    --accent:#E8823A;
+    --muted:#9a968c;
+    --rule:#2a2a2c;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:920px;
+    margin:0 auto;
+    padding:64px 24px 96px;
+  }
+  .masthead{
+    text-align:center;
+    padding-bottom:40px;
+    border-bottom:1px solid var(--rule);
+    margin-bottom:48px;
+  }
+  .masthead h1{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:96px;
+    line-height:1;
+    margin:0;
+    letter-spacing:-1px;
+  }
+  .masthead .date{
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    color:var(--muted);
+    margin-top:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+  .editors-note{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:28px;
+    line-height:1.45;
+    color:var(--fg);
+    margin:0 0 72px;
+    max-width:820px;
+  }
+  .story{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:28px;
+    padding:48px 0;
+    border-top:1px solid var(--rule);
+  }
+  .story:first-of-type{
+    border-top:1px solid var(--rule);
+  }
+  .rank{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:120px;
+    line-height:1;
+    color:var(--muted);
+    opacity:0.5;
+  }
+  .story-body{ min-width:0; }
+  .pill{
+    display:inline-block;
+    background:var(--accent);
+    color:#0B0B0D;
+    font-family:'Inter',sans-serif;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    padding:5px 10px;
+    border-radius:3px;
+    margin-bottom:14px;
+  }
+  .headline-row{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+  }
+  .headline{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:42px;
+    line-height:1.12;
+    margin:0;
+  }
+  .chip{
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--muted);
+    border:1px solid var(--rule);
+    padding:3px 9px;
+    border-radius:20px;
+    white-space:nowrap;
+  }
+  .meta{
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+    color:var(--muted);
+    margin-bottom:18px;
+  }
+  .meta a{
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1px solid rgba(232,130,58,0.4);
+  }
+  .meta a:hover{ border-bottom-color:var(--accent); }
+  .summary{
+    font-family:'Inter',sans-serif;
+    font-size:20px;
+    line-height:1.6;
+    color:var(--fg);
+    margin:0;
+    max-width:680px;
+  }
+  .skip-section{
+    margin-top:80px;
+    padding-top:40px;
+    border-top:1px solid var(--rule);
+  }
+  .skip-section h2{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-style:italic;
+    font-size:28px;
+    margin:0 0 24px;
+    color:var(--muted);
+  }
+  .skip-item{
+    padding:16px 0;
+    border-top:1px solid var(--rule);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.5;
+  }
+  .skip-item .skip-title{
+    font-weight:600;
+    color:var(--fg);
+  }
+  .skip-item .skip-reason{
+    color:var(--muted);
+  }
+  @media (max-width:640px){
+    .masthead h1{ font-size:52px; }
+    .story{ grid-template-columns:1fr; gap:10px; }
+    .rank{ font-size:64px; }
+    .headline{ font-size:30px; }
+    .summary{ font-size:18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>AVIATION DAILY</h1>
+    <div class="date">Thursday, July 23, 2026</div>
+  </div>
+
+  <p class="editors-note">Farnborough week closes with two safety-driven headlines — fresh FAA Airworthiness Directives ordering repetitive borescope inspections on CFM LEAP-1A and Rolls-Royce Trent 1000 turbine blades — landing right alongside Pratt &amp; Whitney's most aggressive comeback push yet, from an AI-powered borescope acquisition to GTF orders topping 800 for the year. Underneath the order-book fireworks, the real story is capacity: P&amp;W is racing to add overhaul throughput even as its powder-metal inspection backlog now reaches into the A220 and E2 fleets, while GE and Rolls-Royce both post record shop-visit and time-on-wing gains of their own. It's a day that makes the throughline unmistakable — engine durability and inspection capacity, not new-engine sales, are what will decide who wins this cycle.</p>
+
+  <div class="stories">
+
+    <div class="story">
+      <div class="rank">01</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">FAA orders repetitive borescope inspections on CFM LEAP-1A turbine blades</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Aviation Administration · effective July 27, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/10/2026-13979/airworthiness-directives-cfm-international-sa-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The new AD supersedes an earlier directive for the LEAP-1A23 through -1A35A family after two in-flight shutdowns traced to cracked high-pressure turbine stage-1 blades. Operators must run initial and repetitive borescope inspections, with cracked blades triggering either shortened inspection intervals or outright replacement — unaddressed, the FAA warns of possible loss of the airplane.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">02</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">Pratt &amp; Whitney buys Aiir Innovations to bring AI to borescope inspection</h2>
+          <span class="chip">RTX Newsroom</span>
+        </div>
+        <div class="meta">RTX · July 15, 2026 · <a href="https://www.rtx.com/news/news-center/2026/07/15/rtxs-pratt-whitney-advances-engine-inspections-with-ai-powered-technology" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">P&amp;W acquired Amsterdam-based Aiir Innovations to roll AI-assisted borescope video analysis out across its commercial and military MRO network. The software is already deployed on the V2500 and has completed pilot programs on GTF and F135 engines, cutting inspection time while making defect detection more consistent across shops handling roughly 90,000 in-service engines.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">03</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">Five takeaways from Pratt &amp; Whitney's Farnborough comeback bid</h2>
+          <span class="chip">Airways Magazine</span>
+        </div>
+        <div class="meta">Airways Magazine · July 2026 · <a href="https://www.airwaysmag.com/new-post/five-takeaways-from-pratts-farnborough-comeback-bid" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">GTF Advantage retrofit deliveries to Airbus began in May, targeting 100% Advantage-standard production by early 2028, while a Hot Section Plus retrofit kit — delivering 90-95% of Advantage's durability gain for the roughly 2,100-aircraft legacy fleet — is tracking toward certification in late 2026 or early 2027. AOG groundings are down nearly 40% year-over-year after P&amp;W added a seventh forging press, a third powder-metal tower, and over $100M of Polish overhaul capacity.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">04</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">GTF powder-metal fix now pulling A220 and Embraer E2 engines into inspection queue</h2>
+          <span class="chip">Air Data News</span>
+        </div>
+        <div class="meta">Air Data News · July 2026 · <a href="https://www.airdatanews.com/powder-metal-issue-with-pratt-and-whitney-gtf-engine-will-also-require-inspections-on-the-a220-and-embraer-e2/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">RTX guidance points to 600-700 incremental GTF shop visits tied to powder-metal contamination in parts made between Q4 2015 and Q3 2021, with inspection turnaround running 250-300 days and roughly 770 GTF-powered jets still in storage. The same contamination issue, though less severe, extends to the PW1900G and PW1500G variants powering the A220 and Embraer E2 — P&amp;W is targeting most cases resolved by year-end, with full industry normalization not expected until 2027-2028.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">05</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">Rolls-Royce Trent 1000 fleet ordered into repetitive HPT blade borescope checks</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Aviation Administration · effective June 30, 2026 · <a href="https://www.federalregister.gov/documents/2026/06/15/2026-11965/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Adopting an EASA directive, the FAA now requires initial and repetitive borescope inspections across the full Trent 1000 family (AE3 through R3 variants) after Rolls-Royce found high-pressure turbine blades can fail prematurely. Findings drive either additional inspections or blade replacement, with the FAA citing risk of engine failure and loss of thrust control if left unaddressed.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">06</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">GTF orders and commitments top 800 for 2026 as backlog passes 8,000 engines</h2>
+          <span class="chip">RTX / PR Newswire</span>
+        </div>
+        <div class="meta">RTX · July 22, 2026 · <a href="https://www.stocktitan.net/news/RTX/rtx-s-pratt-whitney-gtftm-engines-surpass-800-orders-and-commitments-fpv1s59ce1v1.html" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">P&amp;W says the GTF backlog has now passed 8,000 engines and 14,000 cumulative program orders from 90-plus customers, with GTF Advantage — promising roughly double the time-on-wing of today's engines — entering service later this year. 2026 customers named include British Airways, Finnair, AirAsia, Scoot, VietJet and Tigerair Taiwan, as the program aims for 300 million-plus flight hours by the mid-2030s.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">07</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">British Airways selects GTF engines for up to 63 new A320neo-family jets</h2>
+          <span class="chip">RTX Newsroom</span>
+        </div>
+        <div class="meta">RTX · July 20, 2026 · <a href="https://www.rtx.com/news/news-center/2026/07/20/british-airways-selects-rtxs-pratt-whitney-gtf-engines-to-power-up-to-63-airb" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The IAG carrier — currently flying V2500-powered A320ceos — picked GTF for 33 firm and 30 option A320neo aircraft, with deliveries starting 2027, plus a 12-year EngineWise Comprehensive maintenance agreement. It pushes the global GTF fleet past 2,800 aircraft across more than 90 operators.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">08</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">MTU Maintenance opens second-ever PW800 overhaul shop worldwide</h2>
+          <span class="chip">MTU Aero Engines</span>
+        </div>
+        <div class="meta">MTU Aero Engines · first shop visit completed May 22, 2026 · <a href="https://www.mtu.de/newsroom/press/latest-press-releases/press-release-detail/mtu-maintenance-launches-pratt-whitney-pw800-engine-mro-as-second-shop-worldwide-opening-next-chapter-in-40-year-collaboration/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">MTU Maintenance Berlin-Brandenburg earned EASA certification as only the second facility in the world — after Pratt &amp; Whitney Canada itself — authorized for full PW800 overhaul, extending a 40-year MTU/P&amp;WC partnership that spans 5,000-plus shop visits. The first repaired customer engine, from a fleet of over 900 PW800s powering the Gulfstream G500/G600 and Dassault Falcon 6X, passed its performance test with no issues.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">09</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">GE Aerospace posts record shop-visit output as Q2 services revenue jumps 32%</h2>
+          <span class="chip">GE Aerospace</span>
+        </div>
+        <div class="meta">GE Aerospace · July 16, 2026 · <a href="https://www.geaerospace.com/news/press-releases/ge-aerospace-announces-second-quarter-2026-results" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Total engine deliveries rose 31% in the first half of 2026, LEAP deliveries alone up 41%, alongside record internal shop-visit output in the quarter and a backlog that now exceeds $210 billion. GE raised full-year guidance across both its commercial engines and defense propulsion segments, with CEO Larry Culp pointing to "robust commercial services growth" as the driver.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">10</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">Rolls-Royce says it has doubled Trent engine time-on-wing since 2023</h2>
+          <span class="chip">Simple Flying</span>
+        </div>
+        <div class="meta">Simple Flying · July 2026 · <a href="https://simpleflying.com/rolls-royce-engine-time-on-wing-improvement/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Rolls-Royce says its modern Trent fleet — Trent 1000, 7000, and XWB — has hit a 100% time-on-wing improvement, blowing past the 40% target set alongside a £1bn 2023 investment. The Trent XWB-84 EP variant, in service since May 2025, is delivering a measured 1.8% fuel-burn cut and is now standard spec on every new A350-900 order.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skip-section">
+    <h2>Worth Skipping</h2>
+    <div class="skip-item">
+      <span class="skip-title">Jackson Square Aviation orders more GTF-powered A320neos.</span>
+      <span class="skip-reason"> Same GTF order-momentum story as British Airways and the 800-order milestone, with no new engineering detail.</span>
+    </div>
+    <div class="skip-item">
+      <span class="skip-title">BOC Aviation places its largest-ever order: up to 300 CFM LEAP engines.</span>
+      <span class="skip-reason"> Pure order-book news on the CFM side with no maintenance, inspection, or shop-visit angle.</span>
+    </div>
+    <div class="skip-item">
+      <span class="skip-title">GE Aerospace, NASA, BETA Technologies and Boeing fly a hybrid-electric testbed above 30,000 feet.</span>
+      <span class="skip-reason"> Genuinely notable R&amp;D milestone, but electric propulsion sits well outside today's powerplant-maintenance focus.</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
