@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviation Daily — August 3, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0B0D;
+    --fg:#EDEAE2;
+    --accent:#E8823A;
+    --muted:#9a968c;
+    --rule:#2a2a2c;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:920px;
+    margin:0 auto;
+    padding:64px 24px 96px;
+  }
+  .masthead{
+    text-align:center;
+    padding-bottom:40px;
+    border-bottom:1px solid var(--rule);
+    margin-bottom:48px;
+  }
+  .masthead h1{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:96px;
+    line-height:1;
+    margin:0;
+    letter-spacing:-1px;
+  }
+  .masthead .date{
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    color:var(--muted);
+    margin-top:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+  .editors-note{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:28px;
+    line-height:1.45;
+    color:var(--fg);
+    margin:0 0 72px;
+    max-width:820px;
+  }
+  .story{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:28px;
+    padding:48px 0;
+    border-top:1px solid var(--rule);
+  }
+  .story:first-of-type{
+    border-top:1px solid var(--rule);
+  }
+  .rank{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:120px;
+    line-height:1;
+    color:var(--muted);
+    opacity:0.5;
+  }
+  .story-body{ min-width:0; }
+  .pill{
+    display:inline-block;
+    background:var(--accent);
+    color:#0B0B0D;
+    font-family:'Inter',sans-serif;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    padding:5px 10px;
+    border-radius:3px;
+    margin-bottom:14px;
+  }
+  .headline-row{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+  }
+  .headline{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:42px;
+    line-height:1.12;
+    margin:0;
+  }
+  .chip{
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--muted);
+    border:1px solid var(--rule);
+    padding:3px 9px;
+    border-radius:20px;
+    white-space:nowrap;
+  }
+  .meta{
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+    color:var(--muted);
+    margin-bottom:18px;
+  }
+  .meta a{
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1px solid rgba(232,130,58,0.4);
+  }
+  .meta a:hover{ border-bottom-color:var(--accent); }
+  .summary{
+    font-family:'Inter',sans-serif;
+    font-size:20px;
+    line-height:1.6;
+    color:var(--fg);
+    margin:0;
+    max-width:680px;
+  }
+  .skip-section{
+    margin-top:80px;
+    padding-top:40px;
+    border-top:1px solid var(--rule);
+  }
+  .skip-section h2{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-style:italic;
+    font-size:28px;
+    margin:0 0 24px;
+    color:var(--muted);
+  }
+  .skip-item{
+    padding:16px 0;
+    border-top:1px solid var(--rule);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.5;
+  }
+  .skip-item .skip-title{
+    font-weight:600;
+    color:var(--fg);
+  }
+  .skip-item .skip-reason{
+    color:var(--muted);
+  }
+  @media (max-width:640px){
+    .masthead h1{ font-size:52px; }
+    .story{ grid-template-columns:1fr; gap:10px; }
+    .rank{ font-size:64px; }
+    .headline{ font-size:30px; }
+    .summary{ font-size:18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>AVIATION DAILY</h1>
+    <div class="date">Monday, August 3, 2026</div>
+  </div>
+
+  <p class="editors-note">Three fresh Airworthiness Directives anchor this edition — a tightened CFM56-7B fan-blade inspection rushed out after this month's Ryanair/Malta Air uncontained failure, a GEnx fuel-hose replacement mandate, and a Rolls-Royce fix good enough that the FAA wants to <em>remove</em> an inspection requirement rather than add one. Around them, the GTF story keeps splitting in two: Pratt &amp; Whitney banked over 800 GTF orders and commitments at Farnborough while Eagle Services Asia leans on robotics to squeeze 40% more throughput out of its Singapore shops just to keep pace. Layer on Rolls-Royce's second durability tranche for the Trent 1000, CFM's record LEAP-1A haul, and a new Singapore joint venture built solely to add LEAP shop capacity, and the throughline is unmistakable: every OEM is racing to make engines last longer because nobody can build shop capacity fast enough to cover for engines that don't.</p>
+
+  <div class="stories">
+
+    <div class="story">
+      <div class="rank">01</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">FAA rushes tightened CFM56-7B fan-blade AD after Ryanair engine failure</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Aviation Administration · proposed rule, July 31, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/31/2026-15532/airworthiness-directives-cfm-international-sa-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The proposed AD would supersede 2018-26-01 on all CFM56-7B engines, adopting CFM's updated ultrasonic and eddy-current inspection procedures with an expanded inspection area for fan-blade dovetail cracking. The FAA is giving only 30 days for comment instead of the usual 45, citing both the need to align with EASA and a July 10 uncontained engine failure on a Malta Air (Ryanair) 737-800 — though it says it has no evidence yet tying that event to the unsafe condition this AD addresses.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">02</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">FAA orders fuel-hose replacement on GE GEnx-1B/2B engines over cracking defect</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Aviation Administration · effective August 21, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/17/2026-14478/airworthiness-directives-general-electric-company-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The AD follows a fuel imbalance on a 787-8 powered by GEnx-1B70/P2 engines, traced to a manufacturing defect in specific hose-preform lot numbers that caused the fuel tube hose connecting the main fuel-oil heat exchanger to crack and leak. It applies across the GEnx-1B and GEnx-2B family and requires removing every affected hose assembly and replacing it with an eligible part — no inspect-and-monitor option, straight to mandatory replacement.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">03</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">Rolls-Royce fix is good enough that FAA proposes dropping a Trent 1000 inspection AD</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Aviation Administration · proposed rule, July 23, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/23/2026-14882/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">AD 2023-12-16 required repeated inspection of the Trent 1000 high-pressure-turbine triple seal for excessive wear, with replacement of the seal and the intermediate-pressure-turbine disk if wear was found. Rolls-Royce has since developed a modification that eliminates the underlying wear mechanism entirely, so this proposal would strike qualifying engine serial numbers from the AD's applicability — a rare directive that subtracts maintenance burden rather than adding it. Comments are open through September 8.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">04</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">Pratt &amp; Whitney's Eagle Services Asia leans on robotics to lift GTF output 40%</h2>
+          <span class="chip">FlightGlobal</span>
+        </div>
+        <div class="meta">FlightGlobal · July 2026 · <a href="https://www.flightglobal.com/engines/pratts-eagle-services-asia-boosts-maintenance-output-by-40-in-two-years/166156.article" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Singapore-based Eagle Services Asia, whose workload is now dominated by GTF shop visits tied to the powder-metal recall, opened a second facility ("Eagle 2") in 2024 and has boosted throughput 40% over two years to absorb the demand. Newly inducted engines now pass through a robotic camera rig — a cobot that snaps 200-300 photos per engine and auto-generates condition reports — before technicians ever pick up a wrench, cataloguing components and overall health straight off induction.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">05</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">PW1100G shop demand in H1 2026 already outpaces all of last year</h2>
+          <span class="chip">Air Cargo Week</span>
+        </div>
+        <div class="meta">Air Cargo Week / Aviation Maintenance Magazine · July 2026 · <a href="https://aircargoweek.com/from-pw1100g-to-cfm56-the-engine-maintenance-trends-shaping-2026/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">PW1100G engine-stand utilization hit 95% in the first half of 2026, and EngineStands.com leasing volumes for that fleet already exceeded the whole of 2025 in six months — even as average project duration fell from 245 days in 2024 to 123 days. Legacy CFM56 and V2500 shops aren't off the hook either: with aging 737NGs and A320ceos still flying hard, a jet doing five or six cycles a day can burn through a full 450-cycle task interval in a single summer, pushing the bottleneck straight into autumn.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">06</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">P&amp;W's GTF tops 800 orders and commitments for 2026 after Farnborough haul</h2>
+          <span class="chip">RTX</span>
+        </div>
+        <div class="meta">RTX / Pratt &amp; Whitney · July 22, 2026 · <a href="https://www.rtx.com/news/news-center/2026/07/22/rtxs-pratt-whitney-gtf-engines-surpass-800-orders-and-commitments-in-2026-ye" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The tally was padded by a run of Farnborough wins: British Airways selected GTF engines for up to 63 A320neo-family aircraft, BOC Aviation ordered up to 220 engines for up to 110 A320neos, and Tigerair Taiwan signed an MOU covering 15 A321neos. It's a striking order book for an engine program still working through a multi-year powder-metal durability fix — proof airlines are betting the recovery, not the recall, is the lasting story.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">07</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">Rolls-Royce's second Trent 1000 durability package lands through 2026</h2>
+          <span class="chip">Rolls-Royce</span>
+        </div>
+        <div class="meta">Rolls-Royce · 2026 · <a href="https://www.rolls-royce.com/media/press-releases/2025/12-06-2025-rr-launches-durability-enhancement-package-that-will-double-trent-1000-time-on-wing.aspx" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Phase 2 adds a further 30% time-on-wing improvement across the Trent 1000 and Trent 7000 fleets through better combustor-tile coatings, revised HPT nozzle-guide-vane cooling, lighter and better-coated HP turbine blades, and a combustor-to-turbine interface borrowed from the Trent XWB-84 EP. The certified HPT blade entered new-production engines this year and started reaching the in-service fleet from April, with the rest of the package rolling out through the second half of 2026 — stacked with Phase 1, Rolls-Royce says it triples time on wing versus the original Trent 1000 TEN.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">08</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">CFM leaves Farnborough with a record 1,000-engine LEAP order and a durability certification</h2>
+          <span class="chip">GE Aerospace</span>
+        </div>
+        <div class="meta">GE Aerospace · July 24, 2026 · <a href="https://www.geaerospace.com/news/articles/ge-aerospace-celebrates-record-breaking-engine-deal-improved-durability-and-historic" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">GE Aerospace and CFM International closed nearly 1,800 engine agreements at the show, headlined by an IndiGo MOU for more than 1,000 LEAP-1A engines to power 510 A320neo-family jets — the largest single order in LEAP history. CFM also secured certification for LEAP-1B high-pressure-turbine upgrades meant to double time on wing in hot-and-harsh environments, plus initial certification of a reverse-bleed system that cuts fuel-nozzle replacements, as the LEAP program passes 10,000 engines delivered and 100 million flight hours.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">09</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">GEnx-1B becomes GE's fastest widebody engine ever to hit 50 million flight hours</h2>
+          <span class="chip">GlobeNewswire</span>
+        </div>
+        <div class="meta">GE Aerospace · July 19, 2026 · <a href="https://www.globenewswire.com/news-release/2026/07/19/3329385/0/en/GEnx-1B-Engines-Surpass-50-Million-Flight-Hours.html" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The 787-powering GEnx-1B crossed 50 million flight hours in just over 14 years — the fastest pace of any GE Aerospace widebody — while logging a 99.98% dispatch reliability rate across more than 50 operators. GE credits on-wing tools including its 360 Foam Wash and Blade Inspection Tool for keeping the fleet flying, alongside a $1 billion 2026 investment in U.S. manufacturing capacity, over $100 million of it earmarked specifically for GEnx production.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">10</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">SIA Engineering and Safran launch $118M joint venture purely to add LEAP shop capacity</h2>
+          <span class="chip">FlightGlobal</span>
+        </div>
+        <div class="meta">FlightGlobal / Safran · June 2026 · <a href="https://www.flightglobal.com/aerospace/2026/06/sia-engineering-safran-set-up-leap-engine-mro-joint-venture/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Safran will hold 51% and SIA Engineering 49% of a new Singapore venture built to fold SIAEC's existing quick-turn LEAP work into a full-fledged overhaul shop for LEAP-1A and LEAP-1B, backed by roughly $118 million in planned investment. It's a pure capacity play rather than a technology story — one more sign OEMs increasingly see regional joint ventures, not just in-house expansion, as the fastest way to add engine shop slots.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skip-section">
+    <h2>Worth Skipping</h2>
+    <div class="skip-item">
+      <span class="skip-title">WestJet flight attendants go on strike.</span>
+      <span class="skip-reason"> Labor dispute with no engineering or maintenance angle.</span>
+    </div>
+    <div class="skip-item">
+      <span class="skip-title">GE Aerospace's hybrid-electric demonstrator crosses the Atlantic to Farnborough.</span>
+      <span class="skip-reason"> Genuinely cool, but future-propulsion R&amp;D, not current fleet maintenance.</span>
+    </div>
+    <div class="skip-item">
+      <span class="skip-title">Analysts peg global engine MRO demand at $156B over the next decade.</span>
+      <span class="skip-reason"> A market-size forecast, not an actionable maintenance or engineering development.</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
