@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviation Daily — August 5, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0B0D;
+    --fg:#EDEAE2;
+    --accent:#E8823A;
+    --muted:#9a968c;
+    --rule:#2a2a2c;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:920px;
+    margin:0 auto;
+    padding:64px 24px 96px;
+  }
+  .masthead{
+    text-align:center;
+    padding-bottom:40px;
+    border-bottom:1px solid var(--rule);
+    margin-bottom:48px;
+  }
+  .masthead h1{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:96px;
+    line-height:1;
+    margin:0;
+    letter-spacing:-1px;
+  }
+  .masthead .date{
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    color:var(--muted);
+    margin-top:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+  .editors-note{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:28px;
+    line-height:1.45;
+    color:var(--fg);
+    margin:0 0 72px;
+    max-width:820px;
+  }
+  .story{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:28px;
+    padding:48px 0;
+    border-top:1px solid var(--rule);
+  }
+  .story:first-of-type{
+    border-top:1px solid var(--rule);
+  }
+  .rank{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:120px;
+    line-height:1;
+    color:var(--muted);
+    opacity:0.5;
+  }
+  .story-body{ min-width:0; }
+  .pill{
+    display:inline-block;
+    background:var(--accent);
+    color:#0B0B0D;
+    font-family:'Inter',sans-serif;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    padding:5px 10px;
+    border-radius:3px;
+    margin-bottom:14px;
+  }
+  .headline-row{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+  }
+  .headline{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:42px;
+    line-height:1.12;
+    margin:0;
+  }
+  .chip{
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--muted);
+    border:1px solid var(--rule);
+    padding:3px 9px;
+    border-radius:20px;
+    white-space:nowrap;
+  }
+  .meta{
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+    color:var(--muted);
+    margin-bottom:18px;
+  }
+  .meta a{
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1px solid rgba(232,130,58,0.4);
+  }
+  .meta a:hover{ border-bottom-color:var(--accent); }
+  .summary{
+    font-family:'Inter',sans-serif;
+    font-size:20px;
+    line-height:1.6;
+    color:var(--fg);
+    margin:0;
+    max-width:680px;
+  }
+  .skip-section{
+    margin-top:80px;
+    padding-top:40px;
+    border-top:1px solid var(--rule);
+  }
+  .skip-section h2{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-style:italic;
+    font-size:28px;
+    margin:0 0 24px;
+    color:var(--muted);
+  }
+  .skip-item{
+    padding:16px 0;
+    border-top:1px solid var(--rule);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.5;
+  }
+  .skip-item .skip-title{
+    font-weight:600;
+    color:var(--fg);
+  }
+  .skip-item .skip-reason{
+    color:var(--muted);
+  }
+  @media (max-width:640px){
+    .masthead h1{ font-size:52px; }
+    .story{ grid-template-columns:1fr; gap:10px; }
+    .rank{ font-size:64px; }
+    .headline{ font-size:30px; }
+    .summary{ font-size:18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>AVIATION DAILY</h1>
+    <div class="date">Wednesday, August 5, 2026</div>
+  </div>
+
+  <p class="editors-note">Boeing finally cleared its last MAX variant for production today, but the bigger story underneath is regulatory: three separate engine airworthiness directives — CFM56-7B fan blades, GEnx fuel hoses, and Safran's Arrius 2B2 — have landed within weeks of each other. Pratt &amp; Whitney keeps rebuilding on two fronts at once, folding AI-assisted borescope software into its shop floor while quietly rewriting how it gets paid for the engines it hasn't built yet. And the MRO map keeps redrawing itself, with ORIX buying into aftermarket parts and Singapore and Germany both breaking ground on new capacity for an aging LEAP and GTF fleet.</p>
+
+  <div class="stories">
+
+    <div class="story">
+      <div class="rank">01</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">FAA certifies Boeing 737 MAX 7 after nearly a decade of review</h2>
+          <span class="chip">FAA</span>
+        </div>
+        <div class="meta">Federal Aviation Administration · August 3, 2026 · <a href="https://www.faa.gov/newsroom/faa-statement-certification-boeing-737-max-7" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The FAA issued an amended type certificate for the 737 MAX 7 on August 3, closing out a review that forced updated flight-control software, a redesigned engine anti-ice system, and enhanced flightcrew alerting after more than 1,000 hours of testing. Entry into passenger service still isn't expected until early 2027, with launch customer Southwest Airlines working through deliveries and pilot training on roughly 30 already-assembled airframes.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">02</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">ORIX Aviation agrees to acquire aftermarket specialist AerFin</h2>
+          <span class="chip">Aviation Week</span>
+        </div>
+        <div class="meta">Aviation Week Network · August 3, 2026 · <a href="https://aviationweek.com/mro/supply-chain/japans-orix-acquire-aerfin-aftermarket-expansion" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Japan's ORIX Aviation is buying AerFin, an aircraft, engine and parts aftermarket specialist with operations in Miami, Singapore and Dublin, from private-equity owner CataCap in a deal reported near $638 million. The acquisition folds AerFin's engine-teardown and parts-supply business into ORIX's leasing and asset-management platform, with closing targeted by year-end pending regulatory approval.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">03</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">Pratt &amp; Whitney buys Aiir Innovations to bring AI into borescope inspections</h2>
+          <span class="chip">RTX</span>
+        </div>
+        <div class="meta">RTX / Pratt &amp; Whitney · July 15, 2026 · <a href="https://www.rtx.com/news/news-center/2026/07/15/rtxs-pratt-whitney-advances-engine-inspections-with-ai-powered-technology" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Pratt &amp; Whitney has acquired Amsterdam-based Aiir Innovations to fold AI-assisted borescope video analysis into its shop workflows, aiming for faster, more consistent damage calls across commercial and military MRO. The software is already running on V2500 inspections, with completed pilots on GTF and F135 engines ahead of a wider rollout.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">04</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">FAA moves to expand CFM56-7B fan blade inspections after fatal 2018 failure</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Aviation Administration · proposed rule, July 31, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/31/2026-15532/airworthiness-directives-cfm-international-sa-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">A proposed AD would widen the ultrasonic and eddy-current inspection area for CFM56-7B fan blade dovetails, built on a CFM engine shop manual revision issued July 15 and a service bulletin update from July 28. The rule updates 2018's original mandate, written after a fractured fan blade shattered an engine inlet cowl and killed a passenger; comments close August 31.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">05</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">GE ordered to pull GEnx fuel tube hoses fleet-wide</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Aviation Administration · effective August 21, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/17/2026-14478/airworthiness-directives-general-electric-company-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">A new AD requires operators to remove all affected fuel tube hoses from GEnx engines and replace them with eligible parts, taking effect August 21. Unlike a routine inspection mandate, the directive's fleet-wide, no-exceptions removal language marks it as a higher-urgency action for GEnx-powered 787 and 747-8 operators.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">06</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">Pratt &amp; Whitney wants more money at delivery, less bet on the aftermarket</h2>
+          <span class="chip">FlightGlobal</span>
+        </div>
+        <div class="meta">FlightGlobal · July 23, 2026 · <a href="https://www.flightglobal.com/archive/2026/07/pratt-whitney-looks-to-tweak-business-model-with-more-money-upon-delivery/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">RTX chief executive Chris Calio says Pratt &amp; Whitney is done selling engines at a loss against the promise of decades of shop visits, and wants meaningfully higher margins at delivery for the narrowbody engine it's developing for Airbus and Boeing's late-2030s jets. The shift is a direct response to how badly the GTF's durability problems strained Pratt's cash flow and RTX's balance sheet this cycle.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">07</div>
+      <div class="story-body">
+        <div class="pill">FLAGGED FOR YOU</div>
+        <div class="headline-row">
+          <h2 class="headline">Pratt &amp; Whitney chases a powder-metal supply chain fix</h2>
+          <span class="chip">Aviation Week</span>
+        </div>
+        <div class="meta">Aviation Week Network · late July 2026 · <a href="https://aviationweek.com/mro/supply-chain/pratt-whitney-eyes-materials-supply-chain-breakthrough" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Pratt &amp; Whitney is investing in new atomization capacity and vertically integrating more of its powder-metal supply chain — the same material category behind the 2023 contamination issue that triggered mass A320neo groundings. Structural castings output is already up 12% year-over-year, with full-life powder-metal parts now flowing into both new engines and MRO shops.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">08</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">FAA proposes new life limits for Safran Arrius 2B2 helicopter engines</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Aviation Administration · proposed rule, comments due August 24, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/10/2026-13978/airworthiness-directives-safran-helicopter-engines-sa-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The proposed AD would require operators to fold Safran's revised airworthiness limitations into their existing maintenance and inspection programs, incorporating new life-limit thresholds and intervals for the Arrius 2B2. It's a maintenance-program update rather than an inspection mandate, but it tightens the compliance bar for a widely used light-helicopter engine.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">09</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">Eurowings Technik breaks ground on a dedicated large-component warehouse</h2>
+          <span class="chip">Aviation Business News</span>
+        </div>
+        <div class="meta">Aviation Business News · 2026 · <a href="https://www.aviationbusinessnews.com/mro/latest-news-mro/eurowings-technik-breaks-ground-on-new-components-warehouse/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The new Niederkassel facility, built and operated by AeroMates exclusively for Eurowings Technik, will store large components like flaps, radomes and engine cowls and is due to enter service in February 2027. It's unglamorous logistics infrastructure sized for Eurowings' incoming 737 MAX fleet and future growth — the kind of capacity build that actually determines turnaround times.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">10</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">SIA Engineering and Safran launch $118 million LEAP engine MRO venture</h2>
+          <span class="chip">FlightGlobal</span>
+        </div>
+        <div class="meta">FlightGlobal · June 2026 · <a href="https://www.flightglobal.com/aerospace/2026/06/sia-engineering-safran-set-up-leap-engine-mro-joint-venture/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Safran Aircraft Engines will hold 51% and SIA Engineering 49% of a new Singapore joint venture dedicated to LEAP-1A and -1B overhaul, with combined contributions of about $118 million. It builds on SIAEC's existing quick-turn LEAP work and targets shop-visit capacity as the LEAP fleet ages into heavier maintenance demand — the same capacity crunch reshaping the GTF side of the market.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skip-section">
+    <h2>Worth Skipping</h2>
+    <div class="skip-item">
+      <div class="skip-title">GE Aerospace's Farnborough airshow wrap-up</div>
+      <div class="skip-reason">A highlights reel of deals already reported individually over the past few weeks — nothing new in the recap itself.</div>
+    </div>
+    <div class="skip-item">
+      <div class="skip-title">Eve Air Mobility's first transition flight</div>
+      <div class="skip-reason">An eVTOL milestone, outside the engine, MRO and airworthiness lane this briefing tracks.</div>
+    </div>
+    <div class="skip-item">
+      <div class="skip-title">Vietjet tops out new Long Thanh MRO hangar</div>
+      <div class="skip-reason">Construction milestone actually dates to December 2025 — recirculating, not new.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
