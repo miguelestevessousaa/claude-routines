@@ -1,1 +1,381 @@
-$(cat "/tmp/claude-0/-home-user-claude-routines/0cb96615-e40a-5548-a8e7-df1b6920e1ea/scratchpad/2026-08-10.html")
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviation Daily — August 10, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B0B0D;
+    --text: #EDEAE2;
+    --text-dim: #A9A599;
+    --accent: #E8823A;
+    --rule: #26262A;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    padding: 64px 24px 96px;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Masthead */
+  .masthead {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .masthead h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .masthead .date {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-top: 16px;
+  }
+
+  /* Editor's note */
+  .editors-note {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.45;
+    color: var(--text);
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 72px;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 64px 0;
+  }
+
+  /* Stories */
+  .story {
+    display: flex;
+    gap: 32px;
+    padding: 48px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .story:first-of-type {
+    border-top: 1px solid var(--rule);
+  }
+  .rank {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 0.85;
+    color: var(--text-dim);
+    opacity: 0.55;
+    flex: 0 0 auto;
+    min-width: 140px;
+    text-align: left;
+  }
+  .story-body {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-top: 12px;
+  }
+  .flag-pill {
+    display: inline-block;
+    background: var(--accent);
+    color: #0B0B0D;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  .headline-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .headline {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.1;
+    margin: 0;
+  }
+  .source-chip {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 4px 8px;
+    white-space: nowrap;
+  }
+  .meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-bottom: 20px;
+  }
+  .meta a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .meta a:hover {
+    text-decoration: underline;
+  }
+  .summary {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text);
+    max-width: 640px;
+  }
+
+  /* Worth skipping */
+  .skip-section {
+    margin-top: 40px;
+  }
+  .skip-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .skip-item {
+    padding: 18px 0;
+    border-top: 1px solid var(--rule);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .skip-item .skip-headline {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .skip-item .skip-reason {
+    color: var(--text-dim);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+
+  @media (max-width: 640px) {
+    .masthead h1 { font-size: 56px; }
+    .editors-note { font-size: 22px; }
+    .story { flex-direction: column; gap: 8px; }
+    .rank { font-size: 72px; min-width: 0; }
+    .headline { font-size: 30px; }
+    .summary { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>AVIATION DAILY</h1>
+    <div class="date">Monday, August 10, 2026</div>
+  </div>
+
+  <div class="editors-note">
+    Pratt &amp; Whitney is leaning hard into its recovery story today — AOGs down nearly 40% from last year's peak, a fresh Airworthiness Directive targeting pressure-burner sensors, and OGMA's Alverca line adding PW1900G capability to its GTF workload. The FAA, meanwhile, is turning its attention to GE's GEnx fleet with a fuel-hose Airworthiness Directive taking effect later this month. And across the industry, LEAP and GTF engines are entering their first big shop-visit wave together, with parts lead times stretching to 20–40 weeks and squeezing MRO capacity everywhere.
+  </div>
+
+  <!-- Story 1 -->
+  <div class="story">
+    <div class="rank">01</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">Pratt &amp; Whitney hails "dramatic" improvement in A320neo AOGs</h2>
+        <span class="source-chip">aviationbusinessnews.com</span>
+      </div>
+      <div class="meta">Aviation Business News · Jul 22, 2026 · <a href="https://www.aviationbusinessnews.com/industry-news/fia-2026-pratt-whitney-hails-dramatic-improvement-in-a320-aogs" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">At the Farnborough Airshow, commercial engines president Rick Deurloo said GTF-related aircraft-on-ground counts are down nearly 40% from last year's peak, with MRO output up 26%. Pratt says it's on track to reach single-digit AOGs by year-end as the durability fixes work through the fleet.</p>
+    </div>
+  </div>
+
+  <!-- Story 2 -->
+  <div class="story">
+    <div class="rank">02</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">British Airways breaks with CFM, picks GTF for up to 63 A320neo jets</h2>
+        <span class="source-chip">prnewswire.com</span>
+      </div>
+      <div class="meta">PR Newswire (RTX) · Jul 20, 2026 · <a href="https://www.prnewswire.com/news-releases/british-airways-selects-rtxs-pratt--whitney-gtf-engines-to-power-up-to-63-airbus-a320neo-aircraft-302829308.html" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">British Airways selected the PW1100G-JM over its longtime CFM LEAP-1A supplier for up to 63 new Airbus A320neo-family aircraft. The order lands as Pratt tries to convert its durability turnaround into fresh market share, not just AOG recovery.</p>
+    </div>
+  </div>
+
+  <!-- Story 3 -->
+  <div class="story">
+    <div class="rank">03</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">P&amp;W bets the next narrowbody engine will still be a geared turbofan</h2>
+        <span class="source-chip">leehamnews.com</span>
+      </div>
+      <div class="meta">Leeham News and Analysis · Jul 16, 2026 · <a href="https://leehamnews.com/2026/07/16/pw-sees-next-airplane-powered-by-turbofan/" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Pratt & Whitney's commercial engines chief said the powerplant for the A320neo/737 MAX successor generation — codenamed NextGen2 — will be a conventional (geared) turbofan rather than an open-fan design like GE's CFM RISE. Rolls-Royce's UltraFan is pursuing a similar architecture bet.</p>
+    </div>
+  </div>
+
+  <!-- Story 4 -->
+  <div class="story">
+    <div class="rank">04</div>
+    <div class="story-body">
+      <div class="headline-row">
+        <h2 class="headline">FAA orders fuel-hose replacement on GE GEnx-1B/-2B engines</h2>
+        <span class="source-chip">federalregister.gov</span>
+      </div>
+      <div class="meta">Federal Register / FAA · Effective Aug 21, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/17/2026-14478/airworthiness-directives-general-electric-company-engines" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">A new Airworthiness Directive covers the GEnx-1B and -2B family (787 and 747-8) after a defective fuel-tube hose connecting the main fuel-oil heat exchanger was traced to a manufacturing lot defect that caused cracking and fuel leaks. Affected hoses must be removed from service and replaced.</p>
+    </div>
+  </div>
+
+  <!-- Story 5 -->
+  <div class="story">
+    <div class="rank">05</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">FAA proposes AD for P&amp;W pressure-burner sensor deterioration</h2>
+        <span class="source-chip">federalregister.gov</span>
+      </div>
+      <div class="meta">Federal Register / FAA · May 26, 2026 · <a href="https://www.federalregister.gov/documents/2026/05/26/2026-10408/airworthiness-directives-pratt-and-whitney-division-engines" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">The proposed directive follows multiple reports of tailpipe fire, loss of thrust control, and in-flight shutdown linked to undetected deterioration of pressure-burner sensors on Pratt & Whitney engines. It would mandate inspection and replacement before the sensors degrade past safe limits.</p>
+    </div>
+  </div>
+
+  <!-- Story 6 -->
+  <div class="story">
+    <div class="rank">06</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">Pratt &amp; Whitney wins $1.3B F135 spare-parts sustainment contract</h2>
+        <span class="source-chip">prnewswire.com</span>
+      </div>
+      <div class="meta">PR Newswire (RTX) · Aug 3, 2026 · <a href="https://www.prnewswire.com/news-releases/rtxs-pratt--whitney-awarded-1-3-billion-f135-sustainment-contract-302839667.html" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">The IDIQ contract funds FY2026 F135 initial spare parts, deployable spare packages, and depot lay-ins supporting the global F-35 fleet across 20 allied nations. Pratt has now delivered more than 1,500 F135 production engines and runs sustainment across 42 bases and 13 ships.</p>
+    </div>
+  </div>
+
+  <!-- Story 7 -->
+  <div class="story">
+    <div class="rank">07</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">Pratt &amp; Whitney Canada to invest $275M CAD in Longueuil plant</h2>
+        <span class="source-chip">rtx.com</span>
+      </div>
+      <div class="meta">RTX Newsroom · Jul 21, 2026 · <a href="https://www.rtx.com/news/news-center/2026/07/21/rtxs-pratt-whitney-canada-to-invest-275-million-cad-in-longueuil-facility-wi" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">With backing from the Canadian and Quebec governments, Pratt & Whitney Canada will expand manufacturing capability at its Longueuil, Quebec facility — part of a wider pattern of P&W plowing capital into production and MRO capacity to keep pace with GTF demand and shop-visit volume.</p>
+    </div>
+  </div>
+
+  <!-- Story 8 -->
+  <div class="story">
+    <div class="rank">08</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">OGMA adds PW1900G capability to its GTF MRO line</h2>
+        <span class="source-chip">aviationweek.com</span>
+      </div>
+      <div class="meta">Aviation Week Network · MRO section · <a href="https://aviationweek.com/mro/ogma-adds-pw1900g-capabilities" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Embraer's Portuguese subsidiary OGMA has expanded its Alverca engine shop to cover the PW1900G (Embraer E190-E2/E195-E2) alongside its existing PW1100G-JM authorization, deepening its role as a P&W Authorized Maintenance Center as GTF shop-visit volume ramps up across Europe.</p>
+    </div>
+  </div>
+
+  <!-- Story 9 -->
+  <div class="story">
+    <div class="rank">09</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">LEAP and GTF engines enter their first major shop-visit wave together</h2>
+        <span class="source-chip">aircargoweek.com</span>
+      </div>
+      <div class="meta">Air Cargo Week · 2026 MRO outlook · <a href="https://aircargoweek.com/from-pw1100g-to-cfm56-the-engine-maintenance-trends-shaping-2026/" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">New-generation LEAP and GTF engines are hitting heavy maintenance at scale for the first time, even as CFM56 and V2500 legacy platforms stay in service longer than planned. Parts lead times have stretched from 4-6 weeks to 20-40+ weeks, making parts flow — not shop floor space — the real constraint on turnaround time.</p>
+    </div>
+  </div>
+
+  <!-- Story 10 -->
+  <div class="story">
+    <div class="rank">10</div>
+    <div class="story-body">
+      <div class="headline-row">
+        <h2 class="headline">FAA and EASA certify LEAP-1B durability kit to double time on wing</h2>
+        <span class="source-chip">geaerospace.com</span>
+      </div>
+      <div class="meta">GE Aerospace Newsroom · Farnborough 2026 · <a href="https://www.geaerospace.com/news/articles/ge-aerospace-celebrates-record-breaking-engine-deal-improved-durability-and-historic" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Both regulators have signed off on a new high-pressure turbine durability kit for the 737 MAX's LEAP-1B, aimed at doubling time on wing in hot-and-harsh operating environments. It's the clearest signal yet that CFM is chasing the same durability problem that's dogged the competing GTF program.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="skip-section">
+    <div class="skip-title">Worth Skipping</div>
+
+    <div class="skip-item">
+      <div class="skip-headline">Joby Aviation warrant expiry triggers NYSE trading halt</div>
+      <div class="skip-reason">Pure eVTOL-stock mechanics — nothing about engines, maintenance, or airworthiness.</div>
+    </div>
+
+    <div class="skip-item">
+      <div class="skip-headline">Loganair flies electric aircraft postal routes in Scotland</div>
+      <div class="skip-reason">Small-scale electric aviation trial with a Beta Alia CX300 — interesting, but outside gas-turbine MRO territory.</div>
+    </div>
+
+    <div class="skip-item">
+      <div class="skip-headline">American Airlines and Infinium deliver first eSAF to a commercial flight</div>
+      <div class="skip-reason">A fuel-supply-chain sustainability milestone, not an engine, maintenance, or AD story.</div>
+    </div>
+  </div>
+
+  <footer>
+    Aviation Daily · compiled from FlightGlobal, Aviation Week, Leeham News, Federal Register, RTX/Pratt &amp; Whitney, GE Aerospace, and industry sources.
+  </footer>
+
+</div>
+</body>
+</html>
