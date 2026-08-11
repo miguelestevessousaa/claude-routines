@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviation Daily — August 11, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B0B0D;
+    --text: #EDEAE2;
+    --text-dim: #A9A599;
+    --accent: #E8823A;
+    --rule: #26262A;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    padding: 64px 24px 96px;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Masthead */
+  .masthead {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .masthead h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .masthead .date {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-top: 16px;
+  }
+
+  /* Editor's note */
+  .editors-note {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.45;
+    color: var(--text);
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 72px;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 64px 0;
+  }
+
+  /* Stories */
+  .story {
+    display: flex;
+    gap: 32px;
+    padding: 48px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .story:first-of-type {
+    border-top: 1px solid var(--rule);
+  }
+  .rank {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 0.85;
+    color: var(--text-dim);
+    opacity: 0.55;
+    flex: 0 0 auto;
+    min-width: 140px;
+    text-align: left;
+  }
+  .story-body {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-top: 12px;
+  }
+  .flag-pill {
+    display: inline-block;
+    background: var(--accent);
+    color: #0B0B0D;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  .headline-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .headline {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.1;
+    margin: 0;
+  }
+  .source-chip {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 4px 8px;
+    white-space: nowrap;
+  }
+  .meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-bottom: 20px;
+  }
+  .meta a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .meta a:hover {
+    text-decoration: underline;
+  }
+  .summary {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text);
+    max-width: 640px;
+  }
+
+  /* Worth skipping */
+  .skip-section {
+    margin-top: 40px;
+  }
+  .skip-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .skip-item {
+    padding: 18px 0;
+    border-top: 1px solid var(--rule);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .skip-item .skip-headline {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .skip-item .skip-reason {
+    color: var(--text-dim);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+
+  @media (max-width: 640px) {
+    .masthead h1 { font-size: 56px; }
+    .editors-note { font-size: 22px; }
+    .story { flex-direction: column; gap: 8px; }
+    .rank { font-size: 72px; min-width: 0; }
+    .headline { font-size: 30px; }
+    .summary { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>AVIATION DAILY</h1>
+    <div class="date">Tuesday, August 11, 2026</div>
+  </div>
+
+  <div class="editors-note">
+    Two fresh Airworthiness Directives lead today — repetitive fan-blade inspections on the CFM56-7B and tighter life-limit thresholds on Rolls-Royce's BR700-725A1-12 — while Pratt & Whitney keeps stacking up GTF wins: a Hot Section Plus retrofit path for in-service PW1100Gs, CMC composite blades headed for the NextGen2 program, 800-plus orders booked this year, and MRO output tracking 30% ahead of last year. MRO capacity is the other throughline, with SIA Engineering and Safran forming a Singapore LEAP joint venture and Duncan Aviation dedicating a new PW300/500 overhaul shop in Nebraska. CFM's open-fan RISE program, meanwhile, quietly logged its 1,000th hour of low-pressure turbine rig testing on the road to a flight demonstrator.
+  </div>
+
+  <!-- Story 1 -->
+  <div class="story">
+    <div class="rank">01</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">FAA supersedes AD, orders repetitive fan-blade inspections on CFM56-7B</h2>
+        <span class="source-chip">federalregister.gov</span>
+      </div>
+      <div class="meta">Federal Register / FAA · Published Jul 31, 2026 · comments due Aug 31 · <a href="https://www.federalregister.gov/documents/2026/07/31/2026-15532/airworthiness-directives-cfm-international-sa-engines" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">The new directive supersedes a prior AD on all CFM56-7B engines (737NG family), requiring initial and repetitive ultrasonic or eddy-current inspections of certain fan blades for crack indications. Blades that fail inspection must be replaced with eligible parts before further flight.</p>
+    </div>
+  </div>
+
+  <!-- Story 2 -->
+  <div class="story">
+    <div class="rank">02</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">Rolls-Royce Deutschland BR700 engines get tighter life-limit AD</h2>
+        <span class="source-chip">federalregister.gov</span>
+      </div>
+      <div class="meta">Federal Register / FAA · Published Jul 15, 2026 · comments due Aug 31 · <a href="https://www.federalregister.gov/documents/2026/07/15/2026-14281/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">The proposed AD covers all BR700-725A1-12 engines, which power the Gulfstream G650 family, and would revise the airworthiness limitations section of maintenance programs with new, more restrictive thresholds and intervals for life-limited parts. Operators would need to fold the updated limits into their maintenance programs on the AD's schedule.</p>
+    </div>
+  </div>
+
+  <!-- Story 3 -->
+  <div class="story">
+    <div class="rank">03</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">P&amp;W opens Hot Section Plus retrofit path for in-service PW1100Gs</h2>
+        <span class="source-chip">asianaviation.com</span>
+      </div>
+      <div class="meta">Asian Aviation · Jul 2026 · <a href="https://asianaviation.com/pratt-whitney-announces-gtf-hot-section-plus/" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Pratt &amp; Whitney has made its "Hot Section Plus" upgrade available for purchase, letting operators fit 35 hot-section components lifted straight from the GTF Advantage onto existing PW1100G-JM engines. Installations begin in 2026, giving airlines a durability boost without waiting for a full Advantage engine swap.</p>
+    </div>
+  </div>
+
+  <!-- Story 4 -->
+  <div class="story">
+    <div class="rank">04</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">P&amp;W to add ceramic-matrix composite blades to NextGen2 GTF</h2>
+        <span class="source-chip">leehamnews.com</span>
+      </div>
+      <div class="meta">Leeham News and Analysis · Jul 20, 2026 · <a href="https://leehamnews.com/2026/07/20/pw-adding-cmcs-composite-blades-to-next-gtf/" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Pratt &amp; Whitney's next narrowbody engine, the geared-turbofan-based NextGen2, will bring in ceramic matrix composites and composite blades — technology GE pioneered on its own engines. It's a further sign P&amp;W is chasing durability and weight gains anywhere it can as it locks in the turbofan architecture bet over an open fan.</p>
+    </div>
+  </div>
+
+  <!-- Story 5 -->
+  <div class="story">
+    <div class="rank">05</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">P&amp;W GTF orders top 800 for 2026, program passes 14,000 total</h2>
+        <span class="source-chip">prnewswire.com</span>
+      </div>
+      <div class="meta">PR Newswire (RTX) · Jul 22, 2026 · <a href="https://www.prnewswire.com/news-releases/rtxs-pratt--whitney-gtf-engines-surpass-800-orders-and-commitments-in-2026-year-to-date-302831517.html" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Announced at Farnborough, P&amp;W's GTF has picked up more than 800 orders and commitments so far in 2026 from customers including British Airways, Finnair, AirAsia and VietJet, pushing the program past 14,000 total orders and commitments from over 90 customers. The GTF Advantage variant is due to enter service later this year.</p>
+    </div>
+  </div>
+
+  <!-- Story 6 -->
+  <div class="story">
+    <div class="rank">06</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">Pratt "cautiously optimistic" as GTF MRO output tracks 30% ahead</h2>
+        <span class="source-chip">aviationweek.com</span>
+      </div>
+      <div class="meta">Aviation Week Network · MRO · <a href="https://aviationweek.com/mro/aircraft-propulsion/pratt-cautiously-optimistic-gtf-mro-outlook" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">P&amp;W's PW1000G inspection program is tracking to forecast, with MRO output up 20% year-to-date and record PW1100 Gate Three restarts pointing to roughly 30% full-year MRO output growth. RTX's Chris Calio said the company remains "cautiously optimistic" on aftermarket demand, even as PW1000-related groundings are expected to average around 350 aircraft a day through year-end.</p>
+    </div>
+  </div>
+
+  <!-- Story 7 -->
+  <div class="story">
+    <div class="rank">07</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">Duncan Aviation dedicates expanded PW300/500 overhaul shop</h2>
+        <span class="source-chip">aviationweek.com</span>
+      </div>
+      <div class="meta">Aviation Week Network · Business Aviation MRO · <a href="https://aviationweek.com/mro/aircraft-propulsion/duncan-aviation-opens-pwc-engine-overhaul-shop" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Duncan Aviation dedicated a $89 million, 36,000-sq-ft turbine engine overhaul expansion at its Lincoln, Nebraska headquarters, adding twelve maintenance bays and a new test cell. The shop builds on Duncan's status as a Pratt &amp; Whitney Designated Overhaul Facility for the PW300 and PW500 business-jet engines, nearly doubling its engine footprint there.</p>
+    </div>
+  </div>
+
+  <!-- Story 8 -->
+  <div class="story">
+    <div class="rank">08</div>
+    <div class="story-body">
+      <div class="headline-row">
+        <h2 class="headline">SIA Engineering and Safran form Singapore LEAP MRO joint venture</h2>
+        <span class="source-chip">flightglobal.com</span>
+      </div>
+      <div class="meta">FlightGlobal · Jun 2026 · <a href="https://www.flightglobal.com/aerospace/2026/06/sia-engineering-safran-set-up-leap-engine-mro-joint-venture/" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">SIAEC and Safran Aircraft Engines are building a new joint venture — Safran holding 51%, SIAEC 49%, up to $118 million invested — to overhaul CFM LEAP-1A and -1B engines in Singapore. It folds in SIAEC's existing quick-turn LEAP maintenance as the foundation for a full-scope shop, another sign engine MRO capacity is racing to keep up with new-generation demand.</p>
+    </div>
+  </div>
+
+  <!-- Story 9 -->
+  <div class="story">
+    <div class="rank">09</div>
+    <div class="story-body">
+      <div class="headline-row">
+        <h2 class="headline">CFM's RISE open-fan program clears 1,000 hours on turbine rig test</h2>
+        <span class="source-chip">geaerospace.com</span>
+      </div>
+      <div class="meta">GE Aerospace Newsroom · Jul 18, 2026 · <a href="https://www.geaerospace.com/news/press-releases/open-fan-advances-toward-flight-test-demonstration" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">CFM says its RISE Open Fan program has run roughly 500 test campaigns since 2021, including over 1,000 hours on a high-speed low-pressure turbine rig, plus ongoing fatigue, icing and ingestion testing on Open Fan blades and outlet guide vanes. Key module design reviews are complete as the architecture heads toward a ground and flight demonstrator later this decade — the clearest rival to P&amp;W's turbofan bet for the next narrowbody generation.</p>
+    </div>
+  </div>
+
+  <!-- Story 10 -->
+  <div class="story">
+    <div class="rank">10</div>
+    <div class="story-body">
+      <div class="headline-row">
+        <h2 class="headline">Somon Air orders Rolls-Royce Trent 1000 XE engines for two 787s</h2>
+        <span class="source-chip">hype.aero</span>
+      </div>
+      <div class="meta">Aviation News (via Hype.aero) · Jul 2026 · <a href="https://hype.aero/cluster/rolls-royce-needs-uk-decision/4496048d-73bb-4a8c-876c-332887b4d6a5/" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Tajik carrier Somon Air has signed for four Trent 1000 XE engines to power two Boeing 787s, a modest but steady order for Rolls-Royce's widebody line even as the company pours development effort into the narrower UltraFan 30 for the next generation of single-aisle jets.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="skip-section">
+    <div class="skip-title">Worth Skipping</div>
+
+    <div class="skip-item">
+      <div class="skip-headline">FAA proposes AD for Safran Arrius 2B2 helicopter engine life limits</div>
+      <div class="skip-reason">A real AD, but for a light-helicopter turboshaft — outside gas-turbine airliner and GTF territory today.</div>
+    </div>
+
+    <div class="skip-item">
+      <div class="skip-headline">US weighs alternative engines for F-15EX and F-16</div>
+      <div class="skip-reason">Fighter-jet propulsion policy story, not commercial engine maintenance or manufacturing.</div>
+    </div>
+
+    <div class="skip-item">
+      <div class="skip-headline">NSIB details 23-component damage from Arik Air 737-700 engine failure</div>
+      <div class="skip-reason">Preliminary report is from March — old news being recirculated, and the CFM56 event isn't GTF-related.</div>
+    </div>
+  </div>
+
+  <footer>
+    Aviation Daily · compiled from FlightGlobal, Aviation Week, Leeham News, Federal Register, RTX/Pratt &amp; Whitney, GE Aerospace, and industry sources.
+  </footer>
+
+</div>
+</body>
+</html>
