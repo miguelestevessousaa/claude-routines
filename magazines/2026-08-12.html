@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviation Daily — August 12, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B0B0D;
+    --text: #EDEAE2;
+    --text-dim: #A9A599;
+    --accent: #E8823A;
+    --rule: #26262A;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    padding: 64px 24px 96px;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Masthead */
+  .masthead {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .masthead h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .masthead .date {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-top: 16px;
+  }
+
+  /* Editor's note */
+  .editors-note {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.45;
+    color: var(--text);
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 72px;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 64px 0;
+  }
+
+  /* Stories */
+  .story {
+    display: flex;
+    gap: 32px;
+    padding: 48px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .story:first-of-type {
+    border-top: 1px solid var(--rule);
+  }
+  .rank {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 0.85;
+    color: var(--text-dim);
+    opacity: 0.55;
+    flex: 0 0 auto;
+    min-width: 140px;
+    text-align: left;
+  }
+  .story-body {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-top: 12px;
+  }
+  .flag-pill {
+    display: inline-block;
+    background: var(--accent);
+    color: #0B0B0D;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  .headline-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .headline {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.1;
+    margin: 0;
+  }
+  .source-chip {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 4px 8px;
+    white-space: nowrap;
+  }
+  .meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-bottom: 20px;
+  }
+  .meta a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .meta a:hover {
+    text-decoration: underline;
+  }
+  .summary {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text);
+    max-width: 640px;
+  }
+
+  /* Worth skipping */
+  .skip-section {
+    margin-top: 40px;
+  }
+  .skip-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .skip-item {
+    padding: 18px 0;
+    border-top: 1px solid var(--rule);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .skip-item .skip-headline {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .skip-item .skip-reason {
+    color: var(--text-dim);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+
+  @media (max-width: 640px) {
+    .masthead h1 { font-size: 56px; }
+    .editors-note { font-size: 22px; }
+    .story { flex-direction: column; gap: 8px; }
+    .rank { font-size: 72px; min-width: 0; }
+    .headline { font-size: 30px; }
+    .summary { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>AVIATION DAILY</h1>
+    <div class="date">Wednesday, August 12, 2026</div>
+  </div>
+
+  <div class="editors-note">
+    Pratt & Whitney used Farnborough's afterglow to talk recovery — AOGs down nearly 40% from last year's peak — while a fresh FAA directive grounds certain GEnx-1B fuel hoses and MRO shops from Alverca to Stavanger race to add PW1100G and CFM56 capacity. Beneath the headlines the industry's bigger architecture bet sharpens: P&amp;W doubles down on ducted turbofans for NextGen2 even as GE and CFM chase record LEAP orders, and fresh utilization data confirms GTF shop stands are the busiest real estate in MRO right now. Borescope automation keeps creeping into that workload too, promising fewer teardown-only surprises as inspectors lean on AI-assisted defect classification.
+  </div>
+
+  <!-- Story 1 -->
+  <div class="story">
+    <div class="rank">01</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">P&amp;W says A320neo AOGs down almost 40% from peak</h2>
+        <span class="source-chip">aviationbusinessnews.com</span>
+      </div>
+      <div class="meta">Aviation Business News · FIA 2026 coverage · <a href="https://www.aviationbusinessnews.com/industry-news/fia-2026-pratt-whitney-hails-dramatic-improvement-in-a320-aogs" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Commercial engines president Rick Deurloo told Farnborough that GTF-related A320neo groundings are "down almost 40%" from last year's peak and should fall to single digits by year-end. MRO output grew 26% in 2025, with similar or greater growth targeted for 2026 as the PW1000G inspection campaign keeps working through its backlog.</p>
+    </div>
+  </div>
+
+  <!-- Story 2 -->
+  <div class="story">
+    <div class="rank">02</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">FAA orders GEnx-1B/-2B fuel-hose replacement after in-flight leak</h2>
+        <span class="source-chip">federalregister.gov</span>
+      </div>
+      <div class="meta">Federal Register / FAA · Effective Aug 21, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/17/2026-14478/airworthiness-directives-general-electric-company-engines" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">The new AD was prompted by a Boeing 787-8 that suffered a fuel imbalance after a defective fuel tube hose leaked at the main fuel-oil heat exchanger. It requires operators of a long list of GEnx-1B and GEnx-2B variants to remove all affected hoses from service and replace them with eligible parts before the effective date.</p>
+    </div>
+  </div>
+
+  <!-- Story 3 -->
+  <div class="story">
+    <div class="rank">03</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">OGMA's new GTF MRO shop expected to triple Portuguese unit's revenue</h2>
+        <span class="source-chip">aviationweek.com</span>
+      </div>
+      <div class="meta">Aviation Week Network · MRO · <a href="https://aviationweek.com/mro/aircraft-propulsion/ogmas-new-gtf-mro-shop-expected-triple-revenues" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Embraer's Portuguese subsidiary OGMA, the network's 18th GTF MRO location and eighth in Europe, is ramping up PW1100G-JM disassembly, repair and test work at its Alverca facility. Executives expect the induction volume to triple OGMA's revenue as Pratt leans harder on its MRO network to work through the PW1000G backlog.</p>
+    </div>
+  </div>
+
+  <!-- Story 4 -->
+  <div class="story">
+    <div class="rank">04</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">P&amp;W rejects open fan, bets NextGen2 GTF stays a ducted turbofan</h2>
+        <span class="source-chip">leehamnews.com</span>
+      </div>
+      <div class="meta">Leeham News and Analysis · Jul 16, 2026 · <a href="https://leehamnews.com/2026/07/16/pw-sees-next-airplane-powered-by-turbofan/" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Rick Deurloo told reporters at Farnborough that Pratt & Whitney looked hard at unducted, open-rotor architecture for its next narrowbody engine and walked away, calling the geared-turbofan path "a low-risk next-gen solution." He noted Rolls-Royce's UltraFan and GE's turbofan alternative to its own open-fan program as validation that ducted designs aren't going away.</p>
+    </div>
+  </div>
+
+  <!-- Story 5 -->
+  <div class="story">
+    <div class="rank">05</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">PW1100G shop stands hit 95% utilization in first-half 2026</h2>
+        <span class="source-chip">aviationpros.com</span>
+      </div>
+      <div class="meta">Aviation Pros · 6-month engine trend analysis · <a href="https://www.aviationpros.com/aircraft-maintenance-technology/mros-repair-shops/article/55385642/6-month-analysis-which-2026-engine-trends-and-aviation-industry-forecasts-are-most-important-for-maintenance-organizations" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Mid-year MRO data shows PW1100G stands running at 95% utilization through H1 2026, the highest of any narrowbody platform, versus 71% for LEAP-1A. Analysts warn engine MRO demand could outstrip available capacity by more than 17% before the decade is out, as labor and supply-chain constraints continue to cap throughput.</p>
+    </div>
+  </div>
+
+  <!-- Story 6 -->
+  <div class="story">
+    <div class="rank">06</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">Robotic borescope systems bring AI-assisted defect calls to the flight line</h2>
+        <span class="source-chip">oxmaint.com</span>
+      </div>
+      <div class="meta">Industry roundup · Jet engine inspection robotics · <a href="https://oxmaint.com/industries/aviation-management/jet-engine-inspection-robots-borescope-automation-cmms" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">A new generation of robotic borescope crawlers is navigating turbine stages, combustion chambers and compressor sections to capture high-definition imagery of blade erosion, thermal cracks and coating loss without an engine removal. Digital workflows are increasingly pairing that imagery with AI-assisted defect classification and OEM limit checks, tightening the loop between inspection and go/no-go calls.</p>
+    </div>
+  </div>
+
+  <!-- Story 7 -->
+  <div class="story">
+    <div class="rank">07</div>
+    <div class="story-body">
+      <div class="flag-pill">Flagged For You</div>
+      <div class="headline-row">
+        <h2 class="headline">ITP Aero closes Aero Norway deal, adds CFM56 shop to its network</h2>
+        <span class="source-chip">flightglobal.com</span>
+      </div>
+      <div class="meta">FlightGlobal · MRO · <a href="https://www.flightglobal.com/aerospace/itp-aero-continues-to-build-mro-business-with-aero-norway-acquisition/165712.article" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">ITP Aero has completed its acquisition of Stavanger-based Aero Norway, a 200-plus-employee CFM56 overhaul specialist, extending the Spanish firm's aftermarket reach beyond its recent addition to Pratt & Whitney's own GTF MRO network. It's the second bolt-on after BP Aero in the US, part of a broader push to build capacity across multiple engine platforms at once.</p>
+    </div>
+  </div>
+
+  <!-- Story 8 -->
+  <div class="story">
+    <div class="rank">08</div>
+    <div class="story-body">
+      <div class="headline-row">
+        <h2 class="headline">GE Aerospace wraps Farnborough with record LEAP demand</h2>
+        <span class="source-chip">geaerospace.com</span>
+      </div>
+      <div class="meta">GE Aerospace News · Farnborough Airshow 2026 recap · <a href="https://www.geaerospace.com/news/articles/farnborough-airshow-2026-all-news-made-headlines" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">IndiGo's memorandum for more than 1,000 LEAP-1A engines was the show's headline order, and CFM also landed commitments from Jet2, BOC Aviation and Avianca. CFM separately won FAA and EASA certification for a LEAP-1B high-pressure turbine durability upgrade aimed at doubling time-on-wing in hot and harsh environments.</p>
+    </div>
+  </div>
+
+  <!-- Story 9 -->
+  <div class="story">
+    <div class="rank">09</div>
+    <div class="story-body">
+      <div class="headline-row">
+        <h2 class="headline">Rolls-Royce pitches Trent 1000 XE durability package to 787 buyers</h2>
+        <span class="source-chip">aviationweek.com</span>
+      </div>
+      <div class="meta">Aviation Week Network · Spotlight · <a href="https://aviationweek.com/air-transport/aircraft-propulsion/spotlight-rolls-royce-0" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Rolls-Royce is investing heavily in a durability upgrade package for the Trent 1000 XE, marketing it at Farnborough as a competitive answer to reliability concerns that have dogged earlier Trent 1000 builds. VP of marketing Scott Holland used the show to court 787 customers weighing engine choice on new orders.</p>
+    </div>
+  </div>
+
+  <!-- Story 10 -->
+  <div class="story">
+    <div class="rank">10</div>
+    <div class="story-body">
+      <div class="headline-row">
+        <h2 class="headline">Vietjet tops out new MRO facility at Long Thanh airport</h2>
+        <span class="source-chip">flightglobal.com</span>
+      </div>
+      <div class="meta">Flight Global / MRO news · <a href="https://www.flightglobal.com/all-mro-news/319.more?navcode=82" target="_blank" rel="noopener">read →</a></div>
+      <p class="summary">Vietjet has topped out a new maintenance facility at Vietnam's in-development Long Thanh international airport outside Ho Chi Minh City, adding to a wave of Asia-Pacific MRO capacity investment that also includes Korean Air's planned airframe hangar at Incheon, targeted for 2029.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="skip-section">
+    <div class="skip-title">Worth Skipping</div>
+
+    <div class="skip-item">
+      <div class="skip-headline">Investigators retrieve black boxes from fatal LaGuardia ground collision</div>
+      <div class="skip-reason">Serious safety story, but an airport ground-vehicle collision, not engine or powerplant related.</div>
+    </div>
+
+    <div class="skip-item">
+      <div class="skip-headline">IndiGo names Aloke Singh chief strategy officer</div>
+      <div class="skip-reason">Airline executive-suite news with no engineering or maintenance angle.</div>
+    </div>
+
+    <div class="skip-item">
+      <div class="skip-headline">Loganair flies electric Beta Alia CX300 on postal routes</div>
+      <div class="skip-reason">Interesting eVTOL trial, but battery-electric regional flying is well outside GTF/turbine territory.</div>
+    </div>
+  </div>
+
+  <footer>
+    Aviation Daily · compiled from Aviation Business News, Federal Register, Aviation Week, FlightGlobal, Leeham News, Aviation Pros, GE Aerospace, and industry sources.
+  </footer>
+
+</div>
+</body>
+</html>
