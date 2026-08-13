@@ -1,0 +1,346 @@
+<title>Aviation Daily — August 13, 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B0B0D;
+    --text: #EDEAE2;
+    --accent: #E8823A;
+    --muted: #9A968D;
+    --rule: #29282A;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    padding: 64px 24px 96px;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Masthead */
+  .masthead {
+    text-align: center;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 48px;
+  }
+  .masthead h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(40px, 10vw, 96px);
+    letter-spacing: 0.01em;
+    margin: 0;
+    line-height: 1;
+  }
+  .masthead .date {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 18px;
+  }
+
+  /* Editor's note */
+  .editors-note {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(19px, 3.2vw, 28px);
+    line-height: 1.5;
+    color: var(--text);
+    max-width: 760px;
+    margin: 0 auto 72px;
+    text-align: center;
+  }
+
+  /* Stories */
+  .stories { display: flex; flex-direction: column; }
+  .story {
+    display: grid;
+    grid-template-columns: minmax(70px, 140px) 1fr;
+    gap: 8px 32px;
+    padding: 56px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .story:first-of-type { padding-top: 0; }
+  .rank {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(56px, 11vw, 120px);
+    line-height: 1;
+    color: #3A3936;
+  }
+  .story-body { min-width: 0; }
+
+  .pill {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0B0B0D;
+    background: var(--accent);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+
+  .headline-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .headline {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(24px, 4.4vw, 42px);
+    line-height: 1.12;
+    margin: 0;
+  }
+  .chip {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+
+  .meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  .meta a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(232,130,58,0.4);
+  }
+  .meta a:hover { border-bottom-color: var(--accent); }
+
+  .summary {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
+    max-width: 68ch;
+  }
+
+  /* Worth skipping */
+  .skip-section {
+    margin-top: 72px;
+    padding-top: 48px;
+    border-top: 1px solid var(--rule);
+  }
+  .skip-title {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 28px;
+  }
+  .skip-item {
+    display: flex;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .skip-item:last-child { border-bottom: none; }
+  .skip-headline { color: var(--text); font-weight: 600; }
+  .skip-reason { color: var(--muted); }
+
+  @media (max-width: 560px) {
+    .story { grid-template-columns: 1fr; }
+    .rank { font-size: 48px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>AVIATION DAILY</h1>
+    <div class="date">Thursday, August 13, 2026</div>
+  </div>
+
+  <p class="editors-note">
+    Powerplant news today is dominated by durability fixes finally catching up to the problems they were built for: Pratt &amp; Whitney's Hot Section Plus kit nears EASA sign-off while OGMA inducts its first GTF at Alverca, and Rolls-Royce says it has all but eliminated AOG on the Trent fleet. A dense cluster of Airworthiness Directives — GE's GEnx fuel hose, CFM56-7B fan blades, P&amp;W Canada's PW210A, and Airbus's cold-working deviation — lands the same week MRO capacity data confirms shops are running roughly 15-17% over throughput. Underneath it all, AI-assisted borescope and RVI tooling is quietly becoming the thing that decides whether that capacity crunch gets worse or better.
+  </p>
+
+  <div class="stories">
+
+    <div class="story">
+      <div class="rank">01</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">Pratt &amp; Whitney's GTF Hot Section Plus kit on track for 2027 rollout</h2>
+          <span class="chip">Aviation Week</span>
+        </div>
+        <div class="meta">Aviation Week · Jul 2026 · <a href="https://aviationweek.com/mro/aircraft-propulsion/pratt-whitney-says-gtf-upgrade-kit-track-2027-rollout" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The Hot Section Plus kit folds roughly 35 components from the newer PW1100G Advantage engine into the existing PW1100G fleet, targeting the durability gaps that have driven the powder-metal inspection backlog. Pratt expects EASA approval around year-end 2026 or early 2027, with installs prioritized for operators in harsh desert and poor-air-quality environments first. The Advantage-derived hardware is pitched as roughly doubling on-wing life versus the pre-Advantage standard.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">02</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">Caught between Airbus and airlines, Pratt prioritizes the grounded fleet</h2>
+          <span class="chip">The Air Current</span>
+        </div>
+        <div class="meta">The Air Current · 2026 · <a href="https://theaircurrent.com/engine-production/pratt-airbus-airlines-gtf-prioritizes-grounded-fleet/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">With roughly 72 airlines operating over 2,000 PW1100G-powered A320neo-family jets, Pratt's commercial leadership says the "key priority right now is lifting the airline fleet" out of grounding for powder-metal contamination checks. That means new-engine deliveries to Airbus's ramping final-assembly lines are competing directly with spare-engine support for grounded operators, and the two sides have yet to lock a 2026 supply agreement.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">03</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">OGMA inducts its first Pratt &amp; Whitney GTF engine at Alverca</h2>
+          <span class="chip">The Fly / TipRanks</span>
+        </div>
+        <div class="meta">TipRanks (The Fly) · 2026 · <a href="https://www.tipranks.com/news/the-fly/pratt-whitney-embraers-ogma-announces-first-gtf-engine-induction" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Pratt &amp; Whitney and OGMA marked the induction of the first GTF engine at OGMA's Alverca, Portugal facility, formally opening it as an authorized GTF MRO site. It's the network's 18th active GTF maintenance location and the eighth in Europe, adding capacity right as the broader shop-visit backlog for GTF-powered aircraft keeps growing.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">04</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">FAA orders removal of defective GEnx fuel tube hoses after leak report</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Register · effective Aug 21, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/17/2026-14478/airworthiness-directives-general-electric-company-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The new AD for GE GEnx engines follows a reported fuel leak traced to a defective fuel tube hose connecting the main fuel-oil heat exchanger. Operators must remove all affected hoses from service and replace them with eligible parts; the directive takes effect August 21, 2026.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">05</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">FAA proposes tighter fan blade inspections for CFM56-7B fleet</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Register · comments close Aug 31, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/31/2026-15532/airworthiness-directives-cfm-international-sa-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">A proposed rule would supersede the 2018 AD covering CFM56-7B fan blades, keeping the initial and repetitive ultrasonic or eddy-current crack inspections and replacement requirements but updating the applicability and compliance details. The FAA is accepting public comment through August 31, 2026 before finalizing.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">06</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">Pratt &amp; Whitney Canada PW210A hit with turbine exhaust frame AD</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Register · comments close Aug 13, 2026 · <a href="https://www.federalregister.gov/documents/2026/06/29/2026-13058/airworthiness-directives-pratt-and-whitney-canada-corp-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">All PW210A, PW210A1, and PW210S engines are affected by a new directive prompted by circumferential cracks found at the turbine exhaust frame's external surface, attributed to thermal stress from engine starts. The public comment window on this AD closes today, August 13, 2026.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">07</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">Rolls-Royce says it has "effectively eliminated" aircraft-on-ground events</h2>
+          <span class="chip">FlightGlobal</span>
+        </div>
+        <div class="meta">FlightGlobal · Jul 2026 · <a href="https://www.flightglobal.com/archive/2026/07/rolls-royce-eliminates-aircraft-on-ground-as-engine-durability-measures-progress/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Rolls-Royce credits durability work on the Trent fleet, including improved high-pressure turbine blades now fitted to nearly half of Trent 1000 TEN-powered 787s, for driving AOG events toward zero in the first half of the year. The company frames it as evidence its widebody durability program has turned a corner after years of shop-visit pain.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">08</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">Engine MRO demand set to outstrip shop capacity by 17% this decade</h2>
+          <span class="chip">Aviation Pros / IBA</span>
+        </div>
+        <div class="meta">Aviation Pros · 2026 · <a href="https://www.aviationpros.com/aircraft-maintenance-technology/engines-parts/article/55355850/inside-the-new-engine-market-reality-for-mros" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Narrowbody shop visit inductions have roughly doubled since 2014 to around 5,000 a year, and industry forecasts now see demand outrunning installed capacity by more than 17% before 2030. Pratt's own powder-metal inspection campaign is a big part of the squeeze: 600-700 GTF engines need mandatory checks through 2026, some taking 250-300 days each.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">09</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">AI and advanced RVI are reshaping how borescope inspections get done</h2>
+          <span class="chip">MRO Business Today</span>
+        </div>
+        <div class="meta">MRO Business Today · 2026 · <a href="https://mrobusinesstoday.com/beyond-inspection-how-ai-data-and-advanced-rvi-are-reshaping-the-future-of-engine-mro/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Modern videoscopes are moving past a simple picture to engineering-grade 3D measurement and quantitative defect sizing, with inspection records tied automatically to engine serial number and cycle count. AI-assisted defect recognition and smartphone/HD-screen connectivity are pushed as ways to speed up inspections without sacrificing traceability — directly relevant as shop capacity gets tighter.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">10</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">Airbus AD targets cold-working deviation affecting A321neo wing box fatigue life</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Register · effective Aug 3, 2026 · <a href="https://regulations.justia.com/regulations/fedreg/2026/05/14/2026-09662.html" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">A review of the A321neo assembly line's cold-working process found a manufacturing deviation that could shorten the fatigue life of the pressure-deck-membrane-to-center-wing-box attachment and center fuselage frame foot joints. The resulting AD mandates repetitive inspections for fastener-hole condition and cracking, with corrective action required where defects are found.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skip-section">
+    <div class="skip-title">Worth skipping</div>
+
+    <div class="skip-item">
+      <span class="skip-headline">Rolls-Royce raises full-year profit guidance again.</span>
+      <span class="skip-reason">— Investor-relations story about margin and cash flow, not engineering or maintenance content.</span>
+    </div>
+
+    <div class="skip-item">
+      <span class="skip-headline">Boeing and Airbus July production and delivery tallies.</span>
+      <span class="skip-reason">— Monthly market-share bookkeeping with nothing new on the powerplant side.</span>
+    </div>
+
+    <div class="skip-item">
+      <span class="skip-headline">GE Aerospace and Kratos win Air Force contract for CCA drone engine.</span>
+      <span class="skip-reason">— Early-stage military design study, years out from anything touching current shop-visit or GTF work.</span>
+    </div>
+
+  </div>
+
+</div>
