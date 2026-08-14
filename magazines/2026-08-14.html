@@ -1,0 +1,343 @@
+<title>Aviation Daily — August 14, 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B0B0D;
+    --text: #EDEAE2;
+    --accent: #E8823A;
+    --muted: #9A968D;
+    --rule: #29282A;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    padding: 64px 24px 96px;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Masthead */
+  .masthead {
+    text-align: center;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 48px;
+  }
+  .masthead h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(40px, 10vw, 96px);
+    letter-spacing: 0.01em;
+    margin: 0;
+    line-height: 1;
+  }
+  .masthead .date {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 18px;
+  }
+
+  /* Editor's note */
+  .editors-note {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(19px, 3.2vw, 28px);
+    line-height: 1.5;
+    color: var(--text);
+    max-width: 760px;
+    margin: 0 auto 72px;
+    text-align: center;
+  }
+
+  /* Stories */
+  .stories { display: flex; flex-direction: column; }
+  .story {
+    display: grid;
+    grid-template-columns: minmax(70px, 140px) 1fr;
+    gap: 8px 32px;
+    padding: 56px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .story:first-of-type { padding-top: 0; }
+  .rank {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(56px, 11vw, 120px);
+    line-height: 1;
+    color: #3A3936;
+  }
+  .story-body { min-width: 0; }
+
+  .pill {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0B0B0D;
+    background: var(--accent);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+
+  .headline-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .headline {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(24px, 4.4vw, 42px);
+    line-height: 1.12;
+    margin: 0;
+  }
+  .chip {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+
+  .meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  .meta a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(232,130,58,0.4);
+  }
+  .meta a:hover { border-bottom-color: var(--accent); }
+
+  .summary {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
+    max-width: 68ch;
+  }
+
+  /* Worth skipping */
+  .skip-section {
+    margin-top: 72px;
+    padding-top: 48px;
+    border-top: 1px solid var(--rule);
+  }
+  .skip-title {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 28px;
+  }
+  .skip-item {
+    display: flex;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .skip-item:last-child { border-bottom: none; }
+  .skip-headline { color: var(--text); font-weight: 600; }
+  .skip-reason { color: var(--muted); }
+
+  @media (max-width: 560px) {
+    .story { grid-template-columns: 1fr; }
+    .rank { font-size: 48px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>AVIATION DAILY</h1>
+    <div class="date">Friday, August 14, 2026</div>
+  </div>
+
+  <p class="editors-note">
+    Durability is the word of the week: GE's LEAP-1B hot-section kit and Pratt's GTF Hot Section Plus both cleared major milestones at Farnborough, each promising roughly double the time on wing that's been driving the shop-visit crush. That crush is real and getting worse — IATA and independent stand-utilization data both point to GTF and LEAP capacity running at or past its limit through the decade. Meanwhile a fresh cluster of Airworthiness Directives on Rolls-Royce Trent 1000, GE GEnx, and CFM56-7B engines, plus OGMA's growing GTF-adjacent MRO footprint in Portugal, keep the inspection queue full even as the fixes start arriving.
+  </p>
+
+  <div class="stories">
+
+    <div class="story">
+      <div class="rank">01</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">Pratt &amp; Whitney's GTF Hot Section Plus kit on track for 2027 rollout</h2>
+          <span class="chip">Aviation Week</span>
+        </div>
+        <div class="meta">Aviation Week · Aug 2026 · <a href="https://aviationweek.com/mro/aircraft-propulsion/pratt-whitney-says-gtf-upgrade-kit-track-2027-rollout" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Pratt & Whitney says its Hot Section Plus retrofit — roughly 35 components borrowed from the newer PW1100G Advantage engine — remains on schedule for EASA sign-off around year-end 2026, with installs beginning in MRO visits shortly after. Commercial Engines president Rick Deurloo says the kit delivers 90-95% of the Advantage's durability benefit and will be prioritized first for operators flying in harsh desert and poor-air-quality environments. It's the clearest sign yet that a fix for the PW1100G-JM's chronic durability shortfall is close to shipping.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">02</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">Rolls-Royce Trent 1000 hit with new AD over HPC anti-rotation block risk</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Register · effective Aug 13, 2026 · <a href="https://www.federalregister.gov/documents/2026/08/13/2026-16502/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The FAA has adopted a new AD for Trent 1000-A/AE/C/CE/D/E/G/H engines after Rolls-Royce determined a high-pressure compressor mini-disc anti-rotation block could release into the HPC stage 5/6 disc and cone rotor rear shaft during operation. That's a rotor-integrity finding, not a routine wear item, and it lands on a Trent fleet that's only just been getting AOG events under control after years of durability-driven shop visits.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">03</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">GE Aerospace and CFM certify LEAP-1B durability kit doubling hot-section life</h2>
+          <span class="chip">GE Aerospace News</span>
+        </div>
+        <div class="meta">GE Aerospace News · Jul 2026 · <a href="https://www.geaerospace.com/news/press-releases/ge-aerospace-wraps-historic-farnborough-airshow" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">At Farnborough, the FAA and EASA certified GE and CFM's LEAP-1B high-pressure turbine durability kit, aimed at doubling on-wing time in hot-and-harsh operating environments — the same category of fix Pratt is chasing for the GTF. GE also secured initial certification of a reverse-bleed system meant to cut on-wing fuel-nozzle replacements, directly trimming line-maintenance burden for LEAP-1B operators.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">04</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">FAA orders removal of defective GEnx fuel tube hoses after leak report</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Register · effective Aug 21, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/17/2026-14478/airworthiness-directives-general-electric-company-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">A new AD for GE GEnx engines follows a reported fuel leak traced to a defective fuel tube hose connecting the main fuel-oil heat exchanger. Operators must pull all affected hoses from service and replace them with eligible parts before the directive takes effect August 21, 2026 — a compact, engine-serial-driven job but one that adds to an already-stacked AD queue this month.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">05</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">FAA proposes tighter fan blade inspections for CFM56-7B fleet</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Register · comments close Aug 31, 2026 · <a href="https://www.federalregister.gov/documents/2026/07/31/2026-15532/airworthiness-directives-cfm-international-sa-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">A proposed AD would require initial and repetitive ultrasonic or eddy-current inspections of certain CFM56-7B fan blades for crack indications, with replacement mandated where cracks are found. It's a variation on an inspection theme the fan-blade fleet has seen before, but the compliance window and applicability have been tightened; public comment closes August 31, 2026.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">06</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">PW1100G stands hit 95% utilization as GTF shop visits keep climbing</h2>
+          <span class="chip">Aviation Pros</span>
+        </div>
+        <div class="meta">Aviation Pros · Aug 2026 · <a href="https://www.aviationpros.com/aircraft-maintenance-technology/engines-parts/article/55383854/engine-stand-utilization-report-how-narrowbody-mro-bottlenecks-impacted-april-2026-usage" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Engine-stand leasing data shows PW1100G stands running at roughly 95% utilization through the first half of 2026, with leasing volumes already exceeding all of 2025. The one bright spot: average project duration on a PW1100G stand has dropped from 245 days in 2024 to 123 days now, suggesting the GTF inspection and repair pipeline is finally getting faster even as demand keeps rising.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">07</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">IATA presses OEMs for "urgent action" on engine MRO bottlenecks</h2>
+          <span class="chip">IATA</span>
+        </div>
+        <div class="meta">IATA · Jun 2026 · <a href="https://www.iata.org/en/pressroom/2026-releases/06-24-urgent-action-needed-to-ease-engine-mro-bottlenecks/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">IATA's analysis, produced with Emerton, put 648 GTF-powered aircraft — 28% of the fleet — on the ground as of last year, with shop visits for LEAP alone forecast to grow from 600-800 a year to over 5,000 by 2040. Director General Willie Walsh is calling for OEMs to widen parts availability, open up independent MRO access, and lock in long-term spare-parts pricing before durability problems compound further into the decade.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">08</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">OGMA completes first C-390 Millennium overhaul for Hungarian Air Force</h2>
+          <span class="chip">AviTrader</span>
+        </div>
+        <div class="meta">AviTrader · Jun 24, 2026 · <a href="https://avitrader.com/2026/06/24/ogma-concludes-first-c-390-overhaul/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">OGMA, at its Alverca, Portugal facility, completed the first scheduled 24-month maintenance inspection on a Hungarian Air Force C-390 Millennium, strengthening Embraer's European military support network. It's a data point on OGMA's broader growth path — the business is tracking toward $350-400M in 2026 revenue on the back of wins like the Jazz Aviation E175 support deal and an extended SkyWest heavy-maintenance agreement.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">09</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">FAA clears higher takeoff weight for Boeing 787-9 and 787-10</h2>
+          <span class="chip">Boeing</span>
+        </div>
+        <div class="meta">Boeing · Mar 23, 2026 · <a href="https://www.boeing.com/features/2026/03/faa-clears-higher-takeoff-weight-for-787-9-and-787-10" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The FAA certified an increased maximum takeoff weight for the 787-9 (+10,000 lb, to 571,500 lb) and 787-10 (+14,000 lb, to 574,000 lb), giving operators the option of roughly 300-400+ additional nautical miles of range or several tonnes of extra payload. Every 787-9/-10 assembled since December 2025 is structurally capable of the higher weight, and airlines can activate it at delivery or later — a manufacturing-line change with real downstream implications for structural life tracking.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">10</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">Jet2 confirms LEAP-1A across its entire 146-aircraft A321neo orderbook</h2>
+          <span class="chip">FlightGlobal</span>
+        </div>
+        <div class="meta">FlightGlobal · Jul 2026 · <a href="https://www.flightglobal.com/archive/2026/07/jet2-confirms-leap-1a-on-remainder-of-a321neo-fleet/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Jet2 has selected CFM's LEAP-1A for a further 54 A321neos, completing engine selection across its full 146-aircraft A321neo orderbook plus nine leased jets. Twenty-nine LEAP-1A-powered A321neos are already flying for the carrier, adding another single-source LEAP operator to a fleet base that will lean heavily on CFM's global MRO network for the next decade of shop visits.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skip-section">
+    <div class="skip-title">Worth skipping</div>
+
+    <div class="skip-item">
+      <span class="skip-headline">Loganair flies electric Beta Alia CX300 on Glasgow-Dundee postal routes.</span>
+      <span class="skip-reason">— Interesting eVTOL trial, but no powerplant or MRO relevance to today's read.</span>
+    </div>
+
+    <div class="skip-item">
+      <span class="skip-headline">Qantas pushes toward non-stop Sydney-London and Sydney-New York routes.</span>
+      <span class="skip-reason">— Network strategy story, not engineering or maintenance content.</span>
+    </div>
+
+    <div class="skip-item">
+      <span class="skip-headline">GE and Rolls-Royce win Air Force contracts for autonomous drone engines.</span>
+      <span class="skip-reason">— Early-stage military design work, years out from anything touching current GTF or LEAP shop visits.</span>
+    </div>
+
+  </div>
+
+</div>
