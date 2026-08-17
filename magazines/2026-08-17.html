@@ -1,0 +1,341 @@
+<title>Aviation Daily — August 17, 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B0B0D;
+    --text: #EDEAE2;
+    --accent: #E8823A;
+    --muted: #9A968D;
+    --rule: #29282A;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    padding: 64px 24px 96px;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Masthead */
+  .masthead {
+    text-align: center;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 48px;
+  }
+  .masthead h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(40px, 10vw, 96px);
+    letter-spacing: 0.01em;
+    margin: 0;
+    line-height: 1;
+  }
+  .masthead .date {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 18px;
+  }
+
+  /* Editor's note */
+  .editors-note {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(19px, 3.2vw, 28px);
+    line-height: 1.5;
+    color: var(--text);
+    max-width: 760px;
+    margin: 0 auto 72px;
+    text-align: center;
+  }
+
+  /* Stories */
+  .stories { display: flex; flex-direction: column; }
+  .story {
+    display: grid;
+    grid-template-columns: minmax(70px, 140px) 1fr;
+    gap: 8px 32px;
+    padding: 56px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .story:first-of-type { padding-top: 0; }
+  .rank {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(56px, 11vw, 120px);
+    line-height: 1;
+    color: #3A3936;
+  }
+  .story-body { min-width: 0; }
+
+  .pill {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0B0B0D;
+    background: var(--accent);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+
+  .headline-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .headline {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(24px, 4.4vw, 42px);
+    line-height: 1.12;
+    margin: 0;
+  }
+  .chip {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+
+  .meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  .meta a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(232,130,58,0.4);
+  }
+  .meta a:hover { border-bottom-color: var(--accent); }
+
+  .summary {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
+    max-width: 68ch;
+  }
+
+  /* Worth skipping */
+  .skip-section {
+    margin-top: 72px;
+    padding-top: 48px;
+    border-top: 1px solid var(--rule);
+  }
+  .skip-title {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 28px;
+  }
+  .skip-item {
+    display: flex;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .skip-item:last-child { border-bottom: none; }
+  .skip-headline { color: var(--text); font-weight: 600; }
+  .skip-reason { color: var(--muted); }
+
+  @media (max-width: 560px) {
+    .story { grid-template-columns: 1fr; }
+    .rank { font-size: 48px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>AVIATION DAILY</h1>
+    <div class="date">Monday, August 17, 2026</div>
+  </div>
+
+  <p class="editors-note">
+    Pratt & Whitney's week is bookended by compliance and progress: a revised AD tightens the inspection window on cracking PW210 turbine exhaust frames just as the company signals the GTF fleet's AOG crisis is finally trending toward resolution by decade's end. MRO capacity keeps compounding underneath that recovery — OGMA is widening its GTF-adjacent overhaul footprint and AI-assisted borescope inspection is edging toward the mainstream. Meanwhile the order books stay fat — Embraer and GE9X both post records — even as jet fuel above $160 a barrel squeezes European carriers' margins.
+  </p>
+
+  <div class="stories">
+
+    <div class="story">
+      <div class="rank">01</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">Revised AD tightens inspection window for cracking PW210 turbine exhaust frames</h2>
+          <span class="chip">Federal Register</span>
+        </div>
+        <div class="meta">Federal Register · effective Aug 31, 2026 · <a href="https://www.federalregister.gov/documents/2026/08/14/2026-16655/airworthiness-directives-pratt-and-whitney-canada-corp-engines" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">The FAA has revised its directive for Pratt & Whitney Canada PW210A, PW210A1, and PW210S engines after further reports of circumferential cracking on the turbine exhaust frame's external surface, driven by thermal stress from repeated engine starts. The new AD supersedes AD 2026-13-09 to catch frames cracking earlier than the original directive anticipated, and takes effect August 31, giving operators of the affected fleet a compressed compliance window.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">02</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">Pratt targets full GTF recovery by decade's end as Advantage ramps</h2>
+          <span class="chip">FlightGlobal</span>
+        </div>
+        <div class="meta">FlightGlobal · Aug 2026 · <a href="https://www.flightglobal.com/engines/pratt-and-whitney-targets-end-of-decade-for-full-gtf-recovery/166201.article" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Pratt & Whitney says the PW1100G-JM fleet's aircraft-on-ground problem, which has averaged roughly 350 grounded jets a day through 2026, won't be fully resolved until closer to 2030 even as inspection throughput keeps improving. The GTF Advantage — 4% more takeoff thrust, better fuel burn, and more durable hot-section hardware than the baseline engine — is now the centerpiece of that recovery as production ramps and Pratt works to lock in delivery volumes with Airbus.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">03</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">AI and advanced RVI start reshaping how shops read a borescope inspection</h2>
+          <span class="chip">MRO Business Today</span>
+        </div>
+        <div class="meta">MRO Business Today · Aug 2026 · <a href="https://mrobusinesstoday.com/beyond-inspection-how-ai-data-and-advanced-rvi-are-reshaping-the-future-of-engine-mro/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">A new generation of videoscopes is pushing engine borescope work beyond subjective visual calls toward engineering-grade 3D measurement and quantitative defect sizing tied directly to an engine's serial number and cycle count. Paired with AI-assisted defect recognition and remote visual inspection, the shift promises more consistent go/no-go decisions right as GTF and LEAP shop-visit volume stretches qualified borescope inspectors thin.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">04</div>
+      <div class="story-body">
+        <span class="pill">Flagged for you</span>
+        <div class="headline-row">
+          <h2 class="headline">OGMA and AXISCADES ally to scale GTF-adjacent MRO into India, UAE and MENA</h2>
+          <span class="chip">AXISCADES / AngelOne</span>
+        </div>
+        <div class="meta">AngelOne · Aug 2026 · <a href="https://www.angelone.in/news/stocks/axiscades-and-portugal-s-ogma-forge-strategic-alliance-to-scale-global-mro-operations" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Embraer subsidiary OGMA has signed a strategic partnership with AXISCADES Technologies covering aerospace manufacturing, MRO, airframe engineering and certification support across commercial and military platforms. The two companies plan joint business development in India, the UAE and MENA — a geographic push that widens the overhaul footprint feeding off the same engine base OGMA's Alverca, Portugal GTF shop already serves.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">05</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">Singapore Airlines orders 22 more GE9X engines in $2.8B deal</h2>
+          <span class="chip">GE Aerospace News</span>
+        </div>
+        <div class="meta">GE Aerospace News · Aug 2026 · <a href="https://www.geaerospace.com/news/press-releases/commercial-engines/singapore-airlines-signs-28b-order-22-ge9x-engines-services" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Singapore Airlines has ordered 22 additional GE9X engines for its Boeing 777-9 fleet, a deal worth $2.8 billion at list price that bundles in a 12-year TrueChoice services contract. The carrier now has 31 777-9s on order and is set to be the first Asia-Pacific operator flying the type — another data point behind what GE has called record widebody engine demand coming out of Farnborough.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">06</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">GE Aerospace expands Michigan engine plant on a 12-year tax break</h2>
+          <span class="chip">WoodTV</span>
+        </div>
+        <div class="meta">WoodTV · Aug 2026 · <a href="https://www.woodtv.com/news/muskegon-county/ge-aerospace-plans-70m-expansion-project-at-muskegon-site/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">GE Aerospace is expanding its Norton Shores, Michigan facility by 16,000 square feet as part of a $70 million investment, after the city council approved a 12-year, $7.2 million industrial tax exemption to help land the project. The expansion is expected to add 60 jobs and folds into GE's broader, previously announced $1 billion push to grow its US manufacturing and supply-chain footprint.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">07</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">Rolls-Royce and Reliance plan a sovereign fighter engine for India's AMCA</h2>
+          <span class="chip">Rolls-Royce</span>
+        </div>
+        <div class="meta">Rolls-Royce · Aug 14, 2026 · <a href="https://www.rolls-royce.com/media/press-releases/2026/14-08-2026-reliance-industries-and-rolls-royce-announce-strategic-intent-to-partner-and-develop-indias-indigenous-combat-engine-for-the-amca-programme.aspx" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Rolls-Royce and Reliance Industries have announced strategic intent to jointly design, develop and manufacture a fully Indian-owned combat engine for the Advanced Medium Combat Aircraft — a clean-sheet 120kN design meant to enable supercruise. The pair are also exploring a dedicated Aerospace Gas Turbine Complex in India spanning design through overhaul, a long-horizon bet that signals Rolls-Royce building sovereign engine capability beyond its traditional big-fan business.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">08</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">Embraer's backlog hits a record $34.5B on its seventh straight quarterly high</h2>
+          <span class="chip">Embraer</span>
+        </div>
+        <div class="meta">Embraer · Aug 2026 · <a href="https://www.embraer.com/media-center/en/?mediatype=NEWS&detail=27964" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Embraer closed the second quarter with a record $34.5 billion backlog, up 7% from Q1 and 16% year-on-year, with commercial, defense and executive aviation all posting gains. The E2 program crossed 500 firm orders on the back of an Azorra order for 15 E195-E2s, while the defense backlog jumped 42% on a UAE C-390 Millennium deal, alongside the company's strongest second-quarter delivery total in 16 years.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">09</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">Fuel spike guts European airline profits in the second quarter</h2>
+          <span class="chip">FlightGlobal</span>
+        </div>
+        <div class="meta">FlightGlobal · Aug 14, 2026 · <a href="https://www.flightglobal.com/strategy/2026/08/europe-airline-profit-outlook-clouded-fuel-price-second-quarter/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Collective operating profits roughly halved among Europe's leading carriers in the April-June quarter as jet fuel, pushed above $160 a barrel by the Iran conflict, bit hard into margins. IATA now projects the region's full-year net profit falling to $9.6 billion from $13 billion in 2025, with profit per passenger dropping from $10.30 to $7.50 — a reminder that OEMs' record backlogs still sit downstream of airline economics that can turn fast.</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="rank">10</div>
+      <div class="story-body">
+        <div class="headline-row">
+          <h2 class="headline">Air Arabia targets Q3 launch for its Saudi budget-carrier venture</h2>
+          <span class="chip">FlightGlobal</span>
+        </div>
+        <div class="meta">FlightGlobal · Aug 2026 · <a href="https://www.flightglobal.com/archive/2026/08/air-arabia-expects-third-quarter-debut-for-saudi-airline-venture/" target="_blank" rel="noopener">read →</a></div>
+        <p class="summary">Air Arabia, a 49% shareholder in the Air Arabia DMM joint venture, expects to launch its new Saudi low-cost carrier out of Dammam's King Fahd airport in the third quarter. The venture is planned to grow to a 45-aircraft fleet serving 57 international and 24 domestic destinations — a new narrowbody operator that will eventually feed its own stream of engine shop visits into the region's MRO market.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skip-section">
+    <div class="skip-title">Worth skipping</div>
+
+    <div class="skip-item">
+      <span class="skip-headline">SAA names new acting chief as predecessor put on immediate special leave.</span>
+      <span class="skip-reason">— Corporate leadership shuffle, no engineering or maintenance angle.</span>
+    </div>
+
+    <div class="skip-item">
+      <span class="skip-headline">Vietjet tops out its new MRO facility at Long Thanh airport near Ho Chi Minh City.</span>
+      <span class="skip-reason">— Airframe facility construction milestone, not engine-specific.</span>
+    </div>
+
+    <div class="skip-item">
+      <span class="skip-headline">Lilium's Phoenix 2 and Phoenix 3 eVTOL demonstrators acquired by German museums.</span>
+      <span class="skip-reason">— Historical footnote on a defunct program, no powerplant or MRO relevance.</span>
+    </div>
+
+  </div>
+
+</div>
